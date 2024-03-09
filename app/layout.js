@@ -9,6 +9,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+/**
+ * Renders the root layout of the web page.
+ *
+ * @param {Object} props - The props for the component.
+ * @param {React.ReactNode} props.children - The child components to be rendered within the root layout.
+ *
+ * @return {React.ReactNode} The rendered root layout.
+ */
         <div className="header-background">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <defs>
