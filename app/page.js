@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+/**
+ * Represents the Home component.
+ *
+ * @returns {JSX.Element} The rendered Home component.
+ */
 const Home = () => (
   <main>
     <h1 style={{ color: "white", textAlign: "center" }}>
