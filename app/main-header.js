@@ -1,6 +1,7 @@
 import Link from "next/link";
 import logoImg from "@/assets/logo.png";
 import classes from "./main-header.module.css";
+import Image from "next/image";
 
 /**
  * Represents the links displayed in the navigation bar.
@@ -22,7 +23,7 @@ const navbarLinks = [
 const MainHeader = () => (
   <header className={classes.header}>
     <Link className={classes.logo} href="/">
-      <img src={logoImg.src} alt="A plate with food on it" />
+      <Image src={logoImg} alt="A plate with food on it" priority />
       NextLevel Food
     </Link>
     <nav className={classes.nav}>
