@@ -1,5 +1,6 @@
 import classes from "./page.module.css";
 import Link from "next/link";
+import ImageSlideshow from "@/components/ImageSlideshow/ImageSlideshow";
 
 /**
  * Represents the Home component.
@@ -9,7 +10,9 @@ import Link from "next/link";
 const Home = () => (
   <>
     <header className={classes.header}>
-      <div className={classes.slideshow}></div>
+      <div className={classes.slideshow}>
+        <ImageSlideshow />
+      </div>
       <div>
         <div className={classes.hero}>
           <h1>NextLevel Food for NextLevel Foodies</h1>
