@@ -1,4 +1,4 @@
-import classes from "./main-header-background.module.css";
+import classes from "./MainHeaderBackground.module.css";
 
 /**
  * Represents the main header background component.

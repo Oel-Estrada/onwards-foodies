@@ -1,8 +1,8 @@
 import Link from "next/link";
 import logoImg from "@/assets/logo.png";
-import classes from "./main-header.module.css";
+import classes from "./MainHeader.module.css";
 import Image from "next/image";
-import MainHeaderBackground from "@/components/main-header/main-header-background";
+import MainHeaderBackground from "@/components/MainHeader/MainHeaderBackground";
 
 /**
  * Represents the links displayed in the navigation bar.
