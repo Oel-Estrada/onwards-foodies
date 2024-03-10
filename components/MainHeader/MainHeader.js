@@ -3,6 +3,7 @@ import logoImg from "@/assets/logo.png";
 import classes from "./MainHeader.module.css";
 import Image from "next/image";
 import MainHeaderBackground from "@/components/MainHeader/MainHeaderBackground";
+import NavLink from "@/components/NavLink/NavLink";
 
 /**
  * Represents the links displayed in the navigation bar.
@@ -25,7 +26,7 @@ const MainHeader = () => (
   <>
     <MainHeaderBackground />
     <header className={classes.header}>
-      <Link className={classes.logo} href="/public">
+      <Link className={classes.logo} href="/">
         <Image src={logoImg} alt="A plate with food on it" priority />
         NextLevel Food
       </Link>
@@ -33,7 +34,7 @@ const MainHeader = () => (
         <ul>
           {navbarLinks.map(({ label, route }) => (
             <li key={route}>
-              <Link href={route}>{label}</Link>
+              <NavLink href={route}>{label}</NavLink>
             </li>
           ))}
         </ul>
