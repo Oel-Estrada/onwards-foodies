@@ -2,7 +2,7 @@ import Link from "next/link";
 import logoImg from "@/assets/logo.png";
 import classes from "./main-header.module.css";
 import Image from "next/image";
-import MainHeaderBackground from "@/app/main-header-background";
+import MainHeaderBackground from "@/components/main-header/main-header-background";
 
 /**
  * Represents the links displayed in the navigation bar.
@@ -25,7 +25,7 @@ const MainHeader = () => (
   <>
     <MainHeaderBackground />
     <header className={classes.header}>
-      <Link className={classes.logo} href="/">
+      <Link className={classes.logo} href="/public">
         <Image src={logoImg} alt="A plate with food on it" priority />
         NextLevel Food
       </Link>
