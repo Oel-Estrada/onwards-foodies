@@ -11,6 +11,9 @@ import classes from "./ImageSlideshow.module.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+/**
+ * An array of objects, each representing an image and its alt text.
+ */
 const images = [
   { image: burgerImg, alt: "A delicious, juicy burger" },
   { image: curryImg, alt: "A delicious, spicy curry" },
